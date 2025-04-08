@@ -9,8 +9,8 @@ import 'aos/dist/aos.css';
 import { Container, Row, Col, Button } from 'react-bootstrap'
 import MortgageServices from './MortgageServices'
 import '../Home/home.css'
-import mortgageimage from '../../Assets/mortgageimage.png'
-import mortgageimagetwo from '../../Assets/mortgageimagetwo.png'
+import mortgageimagee from '../../Assets/mortgageimagee.jpg'
+import mortgageimagetwoo from '../../Assets/mortgageimagetwoo.jpg'
 import ContactDetail from '../CommonComponents/contactDetail/ContactDetail'
 import Footer from '../CommonComponents/footer/Footer'
 import MortgageCalculator from './MortgageCalculator'
@@ -77,13 +77,13 @@ const Page = () => {
                             </p>
                         </Col>
                         <Col xs={12} sm={6} md={6} lg={6} data-aos="fade-up">
-                            <Image src={mortgageimage} alt='mortgageimage' className='ceo_home_image' style={{borderRadius:'15px'}} />
+                            <Image src={mortgageimagee} alt='mortgageimage' className='ceo_home_image' style={{borderRadius:'15px'}} />
                         </Col>
                     </Row>
 
                     <Row className='md_Row'>
                         <Col xs={12} md={6} data-aos="fade-up">
-                            <Image src={mortgageimagetwo} alt='mortgageimagetwo' className='ceo_home_image' style={{borderRadius:'15px'}} />
+                            <Image src={mortgageimagetwoo} alt='mortgageimagetwo' className='ceo_home_image' style={{borderRadius:'15px'}} />
                         </Col>
                         <Col xs={12} md={6}>
                             <h5 className='residential_mortgage' data-aos="fade-up">

@@ -6,10 +6,10 @@ import { Card, Container, Row, Col, } from "react-bootstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from 'next/image'
-import businesstwo from '../../Assets/businesstwo.png'
+import businesstwoo from '../../Assets/businesstwoo.jpg'
+import businesscardimagee from '../../Assets/businesscardimagee.jpg'
 
-const MortgageServices = ({ businesscardimage }) => {
-    console.log(businesscardimage.src, 'businesscardimage')
+const MortgageServices = () => {
     useEffect(() => {
         AOS.init({
             duration: 1000,
@@ -20,7 +20,7 @@ const MortgageServices = ({ businesscardimage }) => {
         {
             title: "Home in One",
             description: "Save interest on your home loan with Home in One",
-            imageUrl: businesscardimage,
+            imageUrl: businesscardimagee,
             features: [
                 "Min monthly income of AED 15,000 (for salaried individuals)",
                 "Import / Export financing",
@@ -31,7 +31,7 @@ const MortgageServices = ({ businesscardimage }) => {
         {
             title: "Home Loan",
             description: "Stop paying rent and build equity",
-            imageUrl: businesstwo,
+            imageUrl: businesstwoo,
             features: [
                 "Higher eligibility basis Point of Sale & E-Commerce receivables",
                 "Up to AED 3 million",

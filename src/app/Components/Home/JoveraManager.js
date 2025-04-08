@@ -5,9 +5,9 @@ import 'aos/dist/aos.css';
 import './home.css'
 import { Row, Container, Col } from 'react-bootstrap';
 import Image from 'next/image';
-import managerone from '../../Assets/managerone.jpeg'
-import managertwo from '../../Assets/managertwo.png'
-import managerthree from '../../Assets/managerthree.png'
+import managerone from '../../Assets/managerone.jpg'
+import managertwo from '../../Assets/managertwo.jpg'
+import managerthree from '../../Assets/managerthree.jpg'
 import managerfour from '../../Assets/managerfour.png'
 import managerfive from '../../Assets/managerfive.png'
 const JoveraManager = () => {
@@ -52,7 +52,7 @@ const JoveraManager = () => {
                         <div data-aos="fade-up">
                             <Image src={managerfive} alt='managerfive' className='managers_all_videos' data-aos="fade-up" />
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} >
-                                <p className='mb-0 jooveramanager_title' data-aos="fade-up" style={{ color: '#EBC758' }}>Mr.Mohamed Gama</p>
+                                <p className='mb-0 jooveramanager_title' data-aos="fade-up" style={{ color: '#EBC758' }}>Mr.Mohamed Gamal</p>
                                 <p className='mb-0 jooveramanager_title' data-aos="fade-up" >Head Of HR</p>
                             </div>
                         </div>
@@ -62,8 +62,8 @@ const JoveraManager = () => {
                         <div data-aos="fade-up">
                             <Image src={managerthree} alt='managerthree' className='managers_all_videos' data-aos="fade-up" />
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} >
-                                <p className='mb-0 jooveramanager_title' data-aos="fade-up" style={{ color: '#EBC758' }}>Mr.Naim Salmi</p>
-                                <p className='mb-0 jooveramanager_title' data-aos="fade-up">Head Of Personal Loan</p>
+                                <p className='mb-0 jooveramanager_title' data-aos="fade-up" style={{ color: '#EBC758' }}>Mr.Hossam</p>
+                                <p className='mb-0 jooveramanager_title' data-aos="fade-up">Head Of Travel & Tourism</p>
                             </div>
                         </div>
                     </Col>
@@ -72,13 +72,13 @@ const JoveraManager = () => {
                         <div data-aos="fade-up">
                             <Image src={managertwo} alt='managertwo' className='managers_all_videos' data-aos="fade-up" />
                             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} >
-                                <p className='mb-0 jooveramanager_title' data-aos="fade-up" style={{ color: '#EBC758' }}>Mr.Ahmed Abdel Moneim</p>
-                                <p className='mb-0 jooveramanager_title' data-aos="fade-up">Head of Mortgage</p>
+                                <p className='mb-0 jooveramanager_title' data-aos="fade-up" style={{ color: '#EBC758' }}>Mr.Abnoub</p>
+                                <p className='mb-0 jooveramanager_title' data-aos="fade-up">Head of Marketing</p>
                             </div>
                         </div>
                     </Col>
 
-                    <Col xs={12} sm={6} md={4} lg={2} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    {/* <Col xs={12} sm={6} md={4} lg={2} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <div data-aos="fade-up">
                             <div>
                                 <Image src={managerfour} alt='managerfour' className='managers_all_videos' data-aos="fade-up" />
@@ -88,7 +88,7 @@ const JoveraManager = () => {
                                 <p className='mb-0 jooveramanager_title' data-aos="fade-up" >Head Of Business Banking</p>
                             </div>
                         </div>
-                    </Col>
+                    </Col> */}
                 </Row>
             </Container>
         </div>
