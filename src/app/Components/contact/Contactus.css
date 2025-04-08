@@ -1,0 +1,275 @@
+@keyframes backgroundAnimation {
+    0% {
+        background-position: center top;
+    }
+
+    50% {
+        background-position: center bottom;
+    }
+
+    100% {
+        background-position: center top;
+    }
+}
+
+.contact_us_comp {
+    background-image: url('../../Assets/contactimages.png');
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    animation: backgroundAnimation 10s infinite linear;
+}
+
+.error-text {
+    color: #c53342;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+/* Base Styles */
+.get_in_touch {
+    color: #EBC758 !important;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 14.4px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.contact_h1_text {
+    color: #FFF;
+    text-align: center;
+    font-size: 47px;
+    font-weight: 400;
+    line-height: 57.6px;
+    letter-spacing: 0.72px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.contact_tags {
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 14px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin: 7px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Hover Effects */
+.contact_tags:hover {
+    color: #F90;
+    transform: scale(1.1);
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animations */
+.get_in_touch,
+.contact_h1_text,
+.contact_tags {
+    animation: fadeIn 1s forwards;
+    /* Apply fade-in effect */
+}
+
+.contact_tags:hover,
+.connect_tags:active,
+.connect_tags:focus,
+.connect_tags:visited,
+.connect_tags:focus-visible {
+    color: #F90;
+}
+
+.contact_foam_details {
+    background: #18191B;
+    padding: 3%;
+}
+
+.nested_foam_container {
+    border-radius: 20px;
+    border: 2px rgba(10, 13, 23, 0.05);
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(190px);
+    padding: 2%;
+}
+
+.foam_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.responsive-image-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.getintouchimage {
+    animation: fadeIn 1.5s ease-in-out;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.getintouchimage:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.connect_text {
+    color: #EBC758 !important;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1px;
+}
+
+.input_field {
+    border-radius: 5px;
+    border: 1px rgba(255, 255, 255, 0.20);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 12px 14px;
+    color: white;
+
+}
+
+.input_field:active,
+.input_field:focus,
+.input_field:visited,
+.input_field:focus-visible {
+    border-radius: 5px;
+    border: 1px rgba(255, 255, 255, 0.20);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 12px 14px;
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.input_field::placeholder {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -0.15px;
+}
+
+.button_contact_send_message {
+    padding: 15px 20px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #f0f0f0;
+    z-index: 1;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.button_contact_send_message::after,
+.button_contact_send_message::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all .4s;
+}
+
+.button_contact_send_message::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background: #28282d;
+    border-radius: 10px;
+}
+
+.button_contact_send_message::after {
+    transform: translate(10px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #ffffff15;
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
+}
+
+.button_contact_send_message:hover::before {
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
+}
+
+.button_contact_send_message:hover::after {
+    border-radius: 10px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+}
+
+.button_contact_send_message:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+}
+
+@media (max-width:1000px) {
+    .responsive-image-container {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:600px) {
+    .connect_text {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .responsive-image-container {
+        display: none;
+    }
+}

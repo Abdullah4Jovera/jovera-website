@@ -1,0 +1,435 @@
+.realestate_background_class {
+    background-image: url('../../Assets/personalloanimage.png');
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.business_finance_tailored {
+    background: #18191B;
+    padding: 5% 0px 5% 0px;
+}
+
+.h1_tailored {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 42px;
+}
+
+.real_estate_text {
+    text-align: center;
+}
+
+.businessfinancelogocontainer {
+    display: flex;
+    align-items: start;
+    gap: 18px;
+    margin-top: 15%;
+    padding: 0px 20px 0px 20px;
+}
+
+.tailord_logo {
+    animation: rotateScale 3s infinite ease-in-out;
+    width: 100%;
+    max-width: 40px;
+    height: 100%;
+    max-height: 40px;
+}
+
+.businessfinancesolution {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+.loan_feature {
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4.5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.businessfinance_tag {
+    color: #EBC758;
+    text-align: center;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+@keyframes rotateScale {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(0deg) scale(1.2);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+.h1_tailored {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 42px;
+}
+
+.businessfinanceform {
+    background: #242527;
+    height: auto;
+    padding-top: 2%;
+}
+
+.request_text {
+    color: #E3C086;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 14.4px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.callback_form {
+    color: #FFF;
+    text-align: center;
+    font-size: 47px;
+    font-weight: 400;
+    line-height: 57.6px;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+
+.input_field {
+    border-radius: 5px;
+    border: 1px rgba(255, 255, 255, 0.20);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 12px 14px;
+    color: white;
+
+}
+
+.input_field:active,
+.input_field:focus,
+.input_field:visited,
+.input_field:focus-visible {
+    border-radius: 5px;
+    border: 1px rgba(255, 255, 255, 0.20);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 12px 14px;
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.input_field::placeholder {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -0.15px;
+}
+
+.submit_handler_container {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-bottom: 15px;
+}
+
+/* Submit Button */
+.submit_btn {
+    --color: #E3C086;
+    --color2: rgb(10, 25, 30);
+    padding: 0.5em 1.95em;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: var(--color);
+}
+
+.submit_btn::after,
+.submit_btn::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+}
+
+.submit_btn::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.submit_btn:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.submit_btn:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+}
+
+.submit_btn:hover {
+    color: var(--color2);
+}
+
+.submit_btn:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+}
+
+.partner_container {
+    background: #18191B;
+    padding: 4%;
+}
+
+.ourPartner_tag {
+    color: #FFF;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: 0.541px;
+    text-align: center;
+}
+
+.img_fluid {
+    margin-top: 5%;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    max-height: 320px;
+    cursor: pointer;
+    animation: fadeIn 1.5s ease-in-out;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.img_fluid:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.paragraph_container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.paragraph_text {
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-top: 3%;
+}
+
+@media(max-width:1200px) {
+
+    .realestate_background_class {
+        height: 80vh;
+    }
+
+    .img_fluid {
+        width: 100%;
+        max-width: 300px;
+        height: 100%;
+        max-height: 300px;
+    }
+
+
+    .h1_tailored {
+        font-size: 28px;
+    }
+
+    .businessfinance_tag {
+        font-size: 28px;
+    }
+}
+
+@media(max-width:1000px) {
+    .tailord_logo {
+        width: 100%;
+        max-width: 40px;
+        height: 100%;
+        max-height: 40px;
+    }
+
+
+
+    .h1_tailored {
+        font-size: 28px;
+    }
+
+    .businessfinancesolution {
+        font-size: 18px;
+    }
+
+    .callback_form {
+        font-size: 35px;
+    }
+}
+
+@media(max-width:768px) {
+
+    .tailord_logo {
+        width: 100%;
+        max-width: 35px;
+        height: 100%;
+        max-height: 35px;
+    }
+
+    .callback_form {
+        font-size: 24px;
+    }
+
+    .ourPartner_tag {
+        font-size: 32px;
+    }
+
+    .businessfinance_tag {
+        font-size: 24px;
+        /* padding-top: 20px; */
+    }
+
+    .img_fluid {
+        width: 100%;
+        max-width: 250px;
+        height: 100%;
+        max-height: 250px;
+    }
+
+    .loan_feature {
+        color: #FFF;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 4.5px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 6%;
+    }
+
+}
+
+@media(max-width:600px) {
+
+    .realestate_background_class {
+        height: 60vh;
+    }
+
+    .businessfinancelogocontainer {
+        margin-top: 8%;
+    }
+
+    .paragraph_text {
+        color: #FFF;
+        text-align: center;
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+
+    .businessfinancesolution {
+        font-size: 16px;
+    }
+
+    .businessfinance_tag {
+        font-size: 20px;
+    }
+
+    .h1_tailored {
+        padding-top: 20px;
+        font-size: 20px;
+        line-height: -5px;
+        padding: 10px;
+    }
+
+    .callback_form {
+        font-size: 20px;
+    }
+
+    .ourPartner_tag {
+        font-size: 20px;
+    }
+
+    .loan_feature {
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 4.5px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 6%;
+    }
+
+    .img_fluid {
+        width: 100%;
+        max-width: 200px;
+        height: 100%;
+        max-height: 200px;
+    }
+}
+
+@media(max-width:380px) {
+
+    .h1_tailored {
+        padding-top: 18px;
+    }
+
+    .callback_form {
+        font-size: 16px;
+    }
+
+    .img_fluid {
+        width: 100%;
+        max-width: 170px;
+        height: 100%;
+        max-height: 170px;
+    }
+
+    .businessfinance_tag {
+        font-size: 18px;
+    }
+
+    .paragraph_text {
+        color: #FFF;
+        text-align: center;
+        font-size: 12px;
+        text-transform: capitalize;
+    }
+}

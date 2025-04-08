@@ -1,0 +1,577 @@
+.businessFinance_background_class {
+    background-image: url('../../Assets/businessfinancebgg.png');
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    width: 100%;
+    /* Apply smooth animation */
+}
+
+.business_cards {
+    background-color: #292929 !important;
+    border: 1px solid #EBC758 !important;
+}
+
+.jovera_logo_common {
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.jovera_logo_common:hover {
+    transform: rotate(360deg) scale(1.1);
+}
+
+.businessfinance_tag_h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.businessfinance_tag {
+    color: #EBC758;
+    text-align: center;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.solutiondesigned {
+    color: #FFF;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.business_finance_tailored {
+    background: #18191B;
+    padding: 5% 0px 5% 0px;
+}
+
+.h1_tailored {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 45px;
+}
+
+.businessfinancesolution {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.businessfinancelogocontainer {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 15%;
+    padding: 0px 20px 0px 20px;
+}
+
+.tailord_logo {
+    animation: rotateScale 3s infinite ease-in-out;
+    width: 100%;
+    max-width: 40px;
+    height: 100%;
+    max-height: 40px;
+}
+
+.businessfinanceform {
+    background: #242527;
+    height: auto;
+    padding-top: 2%;
+}
+
+.input_field {
+    border-radius: 5px;
+    border: 1px rgba(255, 255, 255, 0.20);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 12px 14px;
+    color: white;
+
+}
+
+.input_field:active,
+.input_field:focus,
+.input_field:visited,
+.input_field:focus-visible {
+    border-radius: 5px;
+    border: 1px rgba(255, 255, 255, 0.20);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 12px 14px;
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.input_field::placeholder {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -0.15px;
+}
+
+.request_text {
+    color: #E3C086;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 14.4px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.callback_form {
+    color: #FFF;
+    text-align: center;
+    font-size: 47px;
+    font-weight: 400;
+    line-height: 57.6px;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+
+.loan_feature {
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4.5px;
+    text-align: center;
+    text-transform: uppercase;
+    /* margin-top: 5%; */
+}
+
+.Discover_feature {
+    color: #EBC758;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 5%;
+}
+
+@keyframes rotateScale {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(0deg) scale(1.2);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+.business_finance_des {
+    background: #292929;
+    padding: 4%;
+}
+
+.businessfinancedes_image {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.businessfinancedes_image:hover {
+    transform: scale(1.1);
+}
+
+.submit_handler_container {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-bottom: 15px;
+}
+
+/* Submit Button */
+.submit_btn {
+    --color: #E3C086;
+    --color2: rgb(10, 25, 30);
+    padding: 0.5em 1.95em;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: var(--color);
+}
+
+.custom-card {
+    background-color: #292929 !important;
+    color: white;
+    border: 1px solid #E3C086;
+    border-radius: 10px;
+}
+
+.submit_btn::after,
+.submit_btn::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+}
+
+.submit_btn::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.submit_btn:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.submit_btn:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+}
+
+.submit_btn:hover {
+    color: var(--color2);
+}
+
+.submit_btn:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+}
+
+.businessFinance_carousal {
+    width: 80%;
+    margin: auto;
+}
+
+.paragraph_text {
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-top: 3%;
+}
+
+.paragraph_container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.business-loan-cards {
+    padding: 2rem 0;
+}
+
+.business-loan-cards .card {
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.business-loan-cards .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.business-loan-cards .card-title {
+    font-size: 1.2rem;
+}
+
+.business-loan-cards .card-text {
+    font-size: 1rem;
+}
+
+.explore_btn {
+    background-color: transparent !important;
+    color: #FFFFFF;
+    border: 1px solid #E3C086;
+    font-size: 14px;
+}
+
+.explore_btn:hover {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background: linear-gradient(180deg, #000, #E3C086);
+    color: #fff;
+    border: none !important;
+}
+
+.card_text_paragrapgh {
+    color: #888B8F;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.19px;
+    text-transform: capitalize;
+}
+
+@media(max-width:1350px) {
+    .businessfinance_tag_h1 {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:1200px) {
+
+    .jovera_logo_common {
+        width: 100%;
+        max-width: 200px;
+        height: 100%;
+        max-height: 200px;
+    }
+
+    .businessFinance_background_class {
+        height: 80vh;
+    }
+
+    .businessfinance_tag_h1 {
+        font-size: 30px;
+    }
+
+    .businessfinance_tag {
+        font-size: 28px;
+    }
+
+    .solutiondesigned {
+        font-size: 24px;
+    }
+
+}
+
+@media(max-width:1000px) {
+    .tailord_logo {
+        width: 100%;
+        max-width: 40px;
+        height: 100%;
+        max-height: 40px;
+    }
+
+    .h1_tailored {
+        font-size: 30px;
+    }
+
+    .callback_form {
+        font-size: 35px;
+    }
+
+    .businessfinancesolution {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:768px) {
+    .businessfinance_tag_h1 {
+        font-size: 24px;
+    }
+
+    .callback_form {
+        font-size: 24px;
+    }
+
+    .businessfinance_tag {
+        font-size: 24px;
+        font-weight: 500 !important;
+    }
+
+    .solutiondesigned {
+        font-size: 18px;
+    }
+
+    .tailord_logo {
+        width: 100%;
+        max-width: 35px;
+        height: 100%;
+        max-height: 35px;
+    }
+
+    .loan_feature {
+        color: #FFF;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 4.5px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 6%;
+    }
+
+    .Discover_feature {
+        color: #EBC758;
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-top: 6%;
+    }
+
+    .businessFinance_background_class {
+        height: 50vh;
+        padding: 15px;
+    }
+}
+
+/* Responsive styles for tablets */
+@media screen and (max-width: 1024px) {
+    .businessFinance_background_class {
+        background-attachment: scroll;
+        height: 50vh;
+        padding: 20px;
+    }
+}
+
+@media(max-width:600px) {
+
+    .jovera_logo_common {
+        width: 100%;
+        max-width: 150px;
+        height: 100%;
+        max-height: 150px;
+    }
+
+    .businessFinance_background_class {
+        height: 60vh;
+    }
+
+    .businessfinance_tag_h1 {
+        font-size: 15px;
+    }
+
+    .businessfinance_tag {
+        font-size: 16px;
+        font-weight: 500 !important;
+    }
+
+    .callback_form {
+        font-size: 20px;
+    }
+
+    .solutiondesigned {
+        font-size: 14px;
+    }
+
+    .h1_tailored {
+        padding-top: 20px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .businessfinancesolution {
+        font-size: 16px;
+    }
+
+    .tailord_logo {
+        width: 100%;
+        max-width: 40px;
+        height: 100%;
+        max-height: 40px;
+    }
+
+    .businessfinancelogocontainer {
+        margin-top: 8%;
+    }
+
+    .loan_feature {
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 4.5px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 6%;
+    }
+
+    .Discover_feature {
+        color: #EBC758;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-top: 6%;
+    }
+
+    .paragraph_text {
+        color: #FFF;
+        text-align: center;
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+}
+
+@media(max-width:380px) {
+
+    .jovera_logo_common {
+        width: 100%;
+        max-width: 100px;
+        height: 100%;
+        max-height: 100px;
+    }
+
+    .businessfinance_tag_h1 {
+        font-size: 13px;
+    }
+
+    .callback_form {
+        font-size: 16px;
+    }
+
+
+    .businessfinance_tag {
+        font-size: 16px;
+        font-weight: 500 !important;
+    }
+
+    .solutiondesigned {
+        font-size: 12px;
+    }
+
+    .h1_tailored {
+        padding-top: 20px;
+    }
+
+    .businessfinancelogocontainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .paragraph_text {
+        color: #FFF;
+        text-align: center;
+        font-size: 12px;
+        text-transform: capitalize;
+    }
+}

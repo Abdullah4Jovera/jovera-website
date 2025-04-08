@@ -1,0 +1,260 @@
+.ceo_md_container {
+    background-color: #292929;
+    padding: 4%;
+    margin-top: -8px;
+}
+
+.ceo_message {
+    color: #EBC758 !important;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.CEO_Row {
+    display: flex;
+    align-items: center;
+}
+
+.md_Row {
+    display: flex;
+    align-items: center;
+}
+
+.ceo_home_image {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.ceo_home_image:hover {
+    transform: scale(1.1);
+}
+
+.JoveraManager_container {
+    background: #18191B;
+    padding: 5%;
+}
+
+.heroSectionSlider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.videoContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.videoContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Adjust the opacity as needed */
+    z-index: 1;
+}
+
+
+.homejoveralogo_image {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 30%;
+    height: 30%;
+    cursor: pointer;
+}
+
+.meet_our_text {
+    color: #E3C086;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14.4px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.manager_text {
+    color: #FFF;
+    text-align: center;
+    font-size: 47px;
+    font-weight: 400;
+    line-height: 57.6px;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+
+.managers_all_videos {
+    width: 100%;
+    height: 100%;
+    animation: fadeInZoom 1.5s ease-in-out forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgb(215, 170, 71, 0.3);
+}
+
+.managers_all_videos:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgb(215, 170, 71, 0.9);
+}
+
+.jovera_description {
+    background: rgba(24, 25, 27, 0.9);
+    padding: 3%;
+}
+
+.card_one_image {
+    background-image: url('../../Assets/cardone.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.card_two_image {
+    background-image: url('../../Assets/cardtwo.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.card_three_image {
+    background-image: url('../../Assets/cardthree.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.card_four_image {
+    background-image: url('../../Assets/cardfour.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+@keyframes fadeInZoom {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media(max-width:1400px) and (min-width:900px) {
+    .jooveramanager_title {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .text {
+        font-size: 1.5rem;
+        width: 40%;
+    }
+}
+
+@media (max-width: 992px) {
+    .text {
+        font-size: 1.25rem;
+        width: 50%;
+    }
+}
+
+@media(max-width:1000px) {
+    .ceo_message {
+        font-size: 34px;
+    }
+
+    .manager_text {
+        font-size: 35px;
+    }
+}
+
+@media(max-width:768px) {
+    .CEO_Row {
+        flex-direction: column-reverse;
+    }
+
+    .text {
+        font-size: 1rem;
+        width: 60%;
+    }
+
+    .managers_all_videos {
+        width: 100%;
+        max-width: 240px;
+        height: 100%;
+    }
+
+    .manager_text {
+        font-size: 30px;
+    }
+
+}
+
+@media(max-width:600px) {
+    .ceo_message {
+        font-size: 24px;
+    }
+
+    .managers_all_videos {
+        width: 100%;
+        max-width: 170px;
+        height: 100%;
+    }
+
+    .manager_text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .text {
+        font-size: 0.75rem;
+        width: 80%;
+    }
+}

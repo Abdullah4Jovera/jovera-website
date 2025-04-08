@@ -1,0 +1,271 @@
+.joveracustomers_container {
+    background: #18191B;
+    padding: 4%;
+}
+
+.joveratime_container {
+    background-image: url('../../Assets/contactbg.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding: 6%;
+}
+
+/* Custom slider wrapper for adding gaps */
+.custom-slider .slider-card-wrapper {
+    padding: 0 10px;
+    /* Horizontal gap between cards */
+}
+
+/* Prevent cards from sticking to the edge */
+.custom-slider {
+    margin: 0 -10px;
+    /* Compensates for padding */
+}
+
+.customer_number {
+    color: #E3C086;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14.4px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.customer_description {
+    color: #BBB;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.55;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.happy_customer {
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 57.6px;
+    letter-spacing: -0.72px;
+}
+
+.customer_des {
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.review_customer_btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card_details_customer {
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+    background: #18191B;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    margin-top: 6%;
+    box-shadow: 0 4px 8px rgb(182, 157, 94, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+
+}
+
+.card_details_customer:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgb(182, 157, 94, 0.7);
+}
+
+.client_name_data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.scheduled_time {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.wearetext {
+    color: #E3C086;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 14.4px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.weareOpentext {
+    color: #FFF;
+    text-align: center;
+    font-size: 47px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 57.6px;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+
+.write_review_btn {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.write_review_btn::before {
+    margin-left: auto;
+}
+
+.write_review_btn::after,
+.write_review_btn::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ebc756;
+    display: block;
+    transition: 0.5s;
+}
+
+.write_review_btn:hover::after,
+.write_review_btn:hover::before {
+    width: 100%;
+}
+
+.modal_description_text {
+    padding: 30px 5px 20px 5px;
+}
+
+.modal_btn {
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+    margin-top: 3%;
+}
+
+.custom-modal .modal-content {
+    background-color: black;
+    color: white;
+    /* Optional: to ensure text is readable */
+    border: none;
+    /* Optional: to remove any default border */
+}
+
+.custom-modal .modal-body {
+    padding: 20px;
+    /* Adjust padding as needed */
+}
+
+.custom-modal .modal_btn button {
+    margin-right: 10px;
+    /* Add some spacing between buttons */
+}
+
+/* Optional: Customize the modal backdrop (overlay) */
+.custom-modal .modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Darken the backdrop */
+}
+
+
+.review_input_field,
+.review_input_field:active,
+.review_input_field:visited,
+.review_input_field:focus-visible,
+.review_input_field:focus {
+    background-color: rgb(24, 25, 27, 0.85);
+    border: none;
+    color: white;
+}
+
+.review_input_field::placeholder {
+    color: white;
+}
+
+.modal_button_review,
+.modal_button_review:hover,
+.modal_button_review:active,
+.modal_button_review:visited,
+.modal_button_review:focus-visible,
+.modal_button_review:focus {
+    background-color: rgb(179, 117, 14, 0.85);
+    border: none;
+}
+
+.modal_button_review_cancel,
+.modal_button_review_cancel:hover,
+.modal_button_review_cancel:active,
+.modal_button_review_cancel:visited,
+.modal_button_review_cancel:focus-visible,
+.modal_button_review_cancel:focus {
+    background-color: rgb(131, 136, 164);
+    border: none;
+}
+
+
+@media(max-width:900px) {
+    .happy_customer {
+        font-size: 24px;
+    }
+}
+
+
+@media(max-width:600px) {
+    .happy_customer {
+        font-size: 18px;
+    }
+
+    .scheduled_time {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .weareOpentext {
+        font-size: 24px;
+    }
+
+    .customer_des {
+        font-size: 12px;
+    }
+
+    .review_customer_btn {
+        flex-direction: column-reverse;
+    }
+
+    .write_review_btn {
+
+        font-size: 18px;
+
+    }
+}
