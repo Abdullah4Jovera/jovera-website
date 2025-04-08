@@ -18,8 +18,8 @@ import BusinessFinanceForm from './BusinessFinanceForm'
 import BusinessFinanceCarousal from './BusinessFinanceCarousal'
 import BusinessLoanCards from './BusinessLoanCards'
 import BusinessEligibility from './BusinessEligibility'
-const Page = () => {
 
+const Page = () => {
     useEffect(() => {
         AOS.init({
             duration: 1000,
@@ -37,29 +37,29 @@ const Page = () => {
     return (
         <>
             <Navbar />
-            <div className='businessFinance_background_class' >
+            <div className='businessFinance_background_class'>
                 {/* <Image src={joveralogo} alt='joveralogo' className='jovera_logo_common' /> */}
                 <div className='business_loan_text'>
-                    <h1 data-aos="fade-up" >Business Loan</h1>
+                    <h1 data-aos="fade-up">Business Loan</h1>
                 </div>
 
                 <h1 className='businessfinance_tag_h1' data-aos="fade-up">Expand your business with a </h1>
-                <h4 className='solutiondesigned' data-aos="fade-up" >flexible, collateral-free loan</h4>
+                <h4 className='solutiondesigned' data-aos="fade-up">flexible, collateral-free loan</h4>
 
                 <div className='applynow_btn' data-aos="fade-up">
                     <Button onClick={handleScrollToSection}>APPLY NOW</Button>
                 </div>
             </div>
 
-            <div className='business_finance_des' >
+            <div className='business_finance_des'>
                 <Container>
                     <h1 className='loan_feature' data-aos="fade-up">Loan Features</h1>
-                    <div className='paragraph_container' >
+                    <div className='paragraph_container'>
                         <h1 className='businessfinance_tag' data-aos="fade-right">
                             Take your business to the next level
                         </h1>
                         <p className='paragraph_text' style={{ textAlign: 'center' }} data-aos="fade-up">
-                            Looking to branch out your business or set up a new one? We're here to back you up with a Business Loan. Benefit from up to AED 3 million and flexible repayment terms to conveniently repay your loan. Also available under Islamic Banking.
+                            Looking to branch out your business or set up a new one? We&#39;re here to back you up with a Business Loan. Benefit from up to AED 3 million and flexible repayment terms to conveniently repay your loan. Also available under Islamic Banking.
                         </p>
                     </div>
 
@@ -67,10 +67,10 @@ const Page = () => {
                     <BusinessEligibility />
                 </Container>
             </div>
+
             <BusinessFinanceForm targetSectionRef={targetSectionRef} />
             <ContactDetail />
             <Footer />
-
         </>
     )
 }
